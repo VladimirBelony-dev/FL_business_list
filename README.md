@@ -13,9 +13,15 @@ This project demonstrates a comprehensive data processing pipeline for extractin
 
 ## 📊 Data Sources
 
+### Public Data Source
+All data used in this project is **publicly available** from the official Florida Department of State website:
+- **Source**: [Florida Department of State - Data Downloads](https://dos.fl.gov/sunbiz/other-services/data-downloads/)
+- **Access Method**: Public FTP download (no authentication required)
+- **Legal Status**: Public records under Florida law
+
 ### Input Files
-- **cordata0.txt - cordata9.txt**: Florida corporation data (10 files, ~1.6GB each)
-- **npcordata0.txt - npcordata9.txt**: Florida non-profit corporation data (10 files, ~28MB each)
+- **cordata0.txt - cordata9.txt**: Florida corporation data (10 files, ~1.6GB each) - Downloaded from public FTP
+- **npcordata0.txt - npcordata9.txt**: Florida non-profit corporation data (10 files, ~28MB each) - Downloaded from public FTP
 - **Corps 10-2-25.xlsx**: Target company list for matching (18,857 companies)
 
 ### Output Files
@@ -137,8 +143,8 @@ This creates the final formatted Excel file with Corps styling.
 ├── fill_officer_address_data.py      # Formatting and integration
 ├── requirements.txt                  # Python dependencies
 ├── README.md                        # This documentation
-├── cordata*.txt                     # Raw corporation data (10 files)
-├── npcordata*.txt                   # Raw non-profit data (10 files)
+├── cordata*.txt                     # Raw corporation data (10 files) - Public data
+├── npcordata*.txt                   # Raw non-profit data (10 files) - Public data
 ├── Corps 10-2-25.xlsx               # Target company list
 └── output/                          # Generated files
     ├── new_officer_sheet_*.csv      # Extracted data
@@ -245,9 +251,20 @@ This project demonstrates advanced data processing techniques for corporate data
 - Add new data sources
 - Enhance formatting options
 
+## ⚖️ Legal Disclaimer
+
+**IMPORTANT**: This project uses only **publicly available data** from the Florida Department of State.
+
+- All data is obtained from official government sources
+- Data is downloaded from public FTP servers (no authentication required)
+- All information is public records under Florida law
+- No private or confidential information is accessed
+- No web scraping of private websites is performed
+- This project demonstrates data processing techniques using public information only
+
 ## 📄 License
 
-This project is provided as-is for educational and research purposes. Please ensure compliance with data usage policies when working with corporate information.
+This project is provided as-is for educational and research purposes. All data used is publicly available from government sources.
 
 ---
 
